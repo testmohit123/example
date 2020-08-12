@@ -1,0 +1,7 @@
+stages:
+  mystage:
+    cmd: python train.py
+    cmd: python confusion_matrix.py
+    deps:
+    - train.py
+    - confusion_matrix.py
