@@ -21,10 +21,10 @@ jobs:
           
           
            # Pull dataset with DVC 
-          dvc pull
+          dvc pull 
           
           # Reproduce pipeline if any changes detected in dependencies
-          dvc repro
+          #dvc repro
           
 
           
