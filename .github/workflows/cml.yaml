@@ -1,4 +1,4 @@
-name: model-wine-quality
+name: model-wine-quality-data
 on: [push]
 jobs:
   run:
@@ -21,7 +21,7 @@ jobs:
           
           
            # Pull dataset with DVC 
-          dvc pull
+          dvc pull 
           
           # Reproduce pipeline if any changes detected in dependencies
           dvc repro
