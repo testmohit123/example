@@ -35,7 +35,7 @@ train_score = accuracy_score(predictions, y_test) * 100
 
 # Write scores to a file
 with open("metrics.json", 'w') as outfile:
-    outfile.write("Accuracy of the Model is: %2.1f%%\n" % train_score)
+    json.dump("Accuracy of the Model is: %2.1f%%\n" % train_score)
 
 ##########################################
 ##### PLOT FEATURE IMPORTANCE ############
