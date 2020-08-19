@@ -4,6 +4,7 @@ from sklearn.ensemble import RandomForestClassifier
 import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.metrics import accuracy_score
+import json
 import numpy as np
 
 # Set random seed
@@ -35,7 +36,7 @@ train_score = accuracy_score(predictions, y_test) * 100
 
 # Write scores to a file
 with open("metrics.json", 'w') as outfile:
-    json.dump("Accuracy of the Model is: %2.1f%%\n" % train_score)
+    json.dump("Accuracy of the Model is: %2.1f%%\n" % train_score,outfile)
 
 ##########################################
 ##### PLOT FEATURE IMPORTANCE ############
