@@ -18,3 +18,5 @@ training:
     md5: 88df86f26297c15a794817e95765de73
   - path: feature_importance.png
     md5: 58e77af81659fd43457e9ad6255d4e1a
+  - path: metrics.txt
+    md5: 3b5874c2bc1b023e935d82a2f897aaf4

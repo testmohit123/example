@@ -13,5 +13,6 @@ stages:
     outs:
       - feature_importance.png
       - confusion_matrix.png
+      - metrics.txt
 
 
