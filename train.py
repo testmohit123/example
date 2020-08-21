@@ -4,7 +4,6 @@ from sklearn.ensemble import RandomForestClassifier
 import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.metrics import accuracy_score
-import numpy as np
 
 # Set random seed
 seed = 42
@@ -35,7 +34,7 @@ train_score = accuracy_score(predictions, y_test) * 100
 
 # Write scores to a file
 with open('metrics.txt', 'w') as outfile:
-    outfile.write("Accuracy:" % train_score)
+    outfile.write(f"Accuracy: {train_score:2.1f}%\n")
 
 ##########################################
 ##### PLOT FEATURE IMPORTANCE ############
@@ -65,8 +64,8 @@ plt.close()
 ##########################################
 
 from sklearn.metrics import plot_confusion_matrix
-plot_confusion_matrix(regr,X_test,y_test)
-plt.tight_layout()
-plt.savefig("confusion_matrix.png",dpi=120)
-plt.close()
 
+plot_confusion_matrix(regr, X_test, y_test)
+plt.tight_layout()
+plt.savefig("confusion_matrix.png", dpi=120)
+plt.close()
