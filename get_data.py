@@ -1,7 +1,7 @@
 import pandas as pd
 import io
 import requests
-
+import os
 
 url = "https://raw.githubusercontent.com/elleobrien/wine/master/wine_quality.csv"
 s = requests.get(url).content
