@@ -7,6 +7,9 @@ from sklearn.metrics import accuracy_score
 from sklearn.metrics import plot_confusion_matrix
 import numpy as np
 import os
+import json
+import numpy as np
+
 # Set random seed
 seed = 42
 
