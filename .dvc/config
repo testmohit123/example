@@ -1,7 +1,0 @@
-[core]
-    remote = storagedvc
-['remote "myremote"']
-    url = azure://container1/storagedvc
-['remote "storagedvc"']
-    url = azure://container1/storagedvc
-    connection_string = DefaultEndpointsProtocol=https;AccountName=storagedvc;AccountKey=I8dwuaFgaSD2A1EcNz/vGaBpWNeEwWdK2jwAn8JfHmIE2GG25VWb5Gbr4+pxkBlkvHuSobsWN5cN98kZypSByA==;EndpointSuffix=core.windows.net
