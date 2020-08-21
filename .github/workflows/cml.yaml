@@ -21,7 +21,7 @@ jobs:
 
           
            # Pull dataset with DVC 
-          dvc pull
+          dvc pull wine_
           
           # Reproduce pipeline if any changes detected in dependencies
           dvc repro

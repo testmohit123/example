@@ -11,7 +11,6 @@ stages:
       - train.py
       - wine_quality.csv
     outs:
-      - feature_importance.png
-      - confusion_matrix.png
+      - wine_quality.csv
 
 
