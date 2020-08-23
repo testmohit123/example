@@ -10,25 +10,21 @@ jobs:
         shell: bash
         env:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
-          #AZURE_STORAGE_CONNECTION_STRING:
-           # ${{ secrets.AZURE_STORAGE_CONNECTION_STRING }}
-          #AZURE_STORAGE_CONTAINER_NAME: ${{ secrets.AZURE_STORAGE_CONTAINER_NAME }}
+          AZURE_STORAGE_CONNECTION_STRING:
+            ${{ secrets.AZURE_STORAGE_CONNECTION_STRING }}
+          AZURE_STORAGE_CONTAINER_NAME: ${{ secrets.AZURE_STORAGE_CONTAINER_NAME }}
 
         run: |
           # Your ML workflow goes here
           pip install -r requirements.txt
-
-          python get_data.py
-          python train.py
           
 
           
            # Pull dataset with DVC 
-          #dvc pull
+          dvc pull wine_quality.csv.dvc
           
           # Reproduce pipeline if any changes detected in dependencies
-          #dvc repro
-
+          dvc repro
 
 
           
