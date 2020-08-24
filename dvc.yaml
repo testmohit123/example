@@ -10,7 +10,10 @@ stages:
     deps:
       - train.py
       - wine_quality.csv
-    
+    outs:
+      - feature_importance.png
+      - confusion_matrix.png
+      - metrics.txt
 
 
     

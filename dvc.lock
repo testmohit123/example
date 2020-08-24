@@ -5,11 +5,18 @@ get_data:
     md5: f2c4d735aad5755ec8854cf0cdd69448
   outs:
   - path: wine_quality.csv
-    md5: 65370e7b05a9d76a5ade687fb3fcee49
+    md5: 2259650f6db06e207074b8912aec0d3b
 training:
   cmd: python train.py
   deps:
   - path: train.py
     md5: 359aaa8862280907f0b866a555cfd3df
   - path: wine_quality.csv
-    md5: 65370e7b05a9d76a5ade687fb3fcee49
+    md5: 2259650f6db06e207074b8912aec0d3b
+  outs:
+  - path: confusion_matrix.png
+    md5: 88df86f26297c15a794817e95765de73
+  - path: feature_importance.png
+    md5: 58e77af81659fd43457e9ad6255d4e1a
+  - path: metrics.txt
+    md5: 3b5874c2bc1b023e935d82a2f897aaf4
