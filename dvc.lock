@@ -1,0 +1,22 @@
+get_data:
+  cmd: python get_data.py
+  deps:
+  - path: get_data.py
+    md5: f2c4d735aad5755ec8854cf0cdd69448
+  outs:
+  - path: wine_quality.csv
+    md5: 65370e7b05a9d76a5ade687fb3fcee49
+training:
+  cmd: python train.py
+  deps:
+  - path: train.py
+    md5: 0866bfad06e4973fa437f6f41c64a333
+  - path: wine_quality.csv
+    md5: 65370e7b05a9d76a5ade687fb3fcee49
+  outs:
+  - path: confusion_matrix.png
+    md5: 7da33c9640c61005bc9e42252d5a36c8
+  - path: feature_importance.png
+    md5: 1fc243dd0c8cecaea0171426b4a16b86
+  - path: metrics.txt
+    md5: 1ea85e5073c722008827b751758f584e
