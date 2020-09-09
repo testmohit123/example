@@ -10,13 +10,13 @@ training:
   cmd: python train.py
   deps:
   - path: train.py
-    md5: 0866bfad06e4973fa437f6f41c64a333
+    md5: 099e834ede20d289efe656fb318743cf
   - path: wine_quality.csv
     md5: 65370e7b05a9d76a5ade687fb3fcee49
   outs:
   - path: confusion_matrix.png
-    md5: 7da33c9640c61005bc9e42252d5a36c8
+    md5: bb71968f495fc0d7ebe11c28720ca723
   - path: feature_importance.png
-    md5: 1fc243dd0c8cecaea0171426b4a16b86
+    md5: 92691e4c34997edeb275f5380460ace2
   - path: metrics.txt
-    md5: 1ea85e5073c722008827b751758f584e
+    md5: fa10c97bcc3ded60afb08710928752a1
